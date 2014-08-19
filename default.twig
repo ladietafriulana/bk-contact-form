@@ -1,0 +1,64 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bk-pt-default">
+
+<div class="main wrapper clearfix">
+
+<h1>Example One</h1>
+<p>Adding style to the placeholder text of the input field.</p>
+<div class="example-one">
+	{{widget('contactform', 'example-one', {'text': 'SEND','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
+</div> <!--end example-one -->
+
+<h1>Example Two</h1>
+<p>Using imagery as a placeholder.</p>
+<div class="example-two">
+	{{widget('contactform', 'example-two', {'text': 'SEND','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
+</div>
+
+
+<h1>Example Three</h1>
+<p>Styling the loading animation and success message.</p>
+<div class="example-three">
+	<div id="maincontactform1" class="widget contactform">
+		<form action="" method="post" class="submitting">
+			<fieldset>
+				<div class="form-group">
+					<label for="contactform-email">Your Email:</label>
+					<input type="email" class="email" placeholder="test@example.com" name="contactform-email" id="contactform-email">
+				</div>
+				<div class="form-group">
+					<label for="contactform-message">Message:</label>
+					<textarea class="message" name="contactform-message" id="contactform-message"></textarea>
+		        </div>
+		        <div class="form-group">
+		        	<button class="btn btnText" type="submit">SEND</button>
+		        </div>
+			</fieldset>
+		</form>
+	</div>
+	<div class="style-for-success-message">
+	 	<div class="overlay success">
+	 		<div class="message-box">
+	 			<span class="message-text">Message sent successfully.</span>
+	 		</div>
+	 	</div>
+	</div>
+</div>
+
+
+<h1>Example Four</h1>
+<p>Using inline labels.</p>
+<div class="example-four">
+	<h1 class="contact-form-title">CONTACT</h1>
+	{{widget('contactform', 'example-four-inline-labels', {'text': 'SEND','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
+</div>
+
+
+</div> <!--end main -->
+
+</div><!--end bk-pt-default -->
+
+{% endblock %}

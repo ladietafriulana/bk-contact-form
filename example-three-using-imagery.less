@@ -1,0 +1,294 @@
+@import "@{templateCommon}/basekit-bootstrap.less";
+
+
+.main {
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    @media @tablet {
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 2em;
+        padding-left: 0;
+    }
+    @media @mobile {
+        padding-top: 1.5em;
+        padding-right: 0;
+        padding-bottom: 1.5em;
+        padding-left: 0;
+    }
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+    @media only screen and (min-width: 1140px) {
+        width: 960px;
+        margin: 0 auto;
+    }
+}
+
+//==============================
+// Example three - Using imagery
+//==============================
+
+
+body {
+  background-color: #f5f5f5;
+}
+
+.widget.contactform {
+  margin: 2em 0;
+    background-color: #ffffff;
+    background-image: image('/images/coloured-line.png');
+    background-repeat: repeat-x;
+    border: 1px solid #F3F2F2;
+    width: 50%;
+    -webkit-box-shadow: 0 3px 3px -3px #BDBABA;
+    -moz-box-shadow: 0 3px 3px -3px #BDBABA;
+    box-shadow: 0 3px 3px -3px #BDBABA;
+    margin-bottom: 20px;
+}
+
+.widget.contactform form {
+    display: block;
+    padding: 1em 3em 0.5em;
+}
+
+.widget.contactform fieldset {
+  border: none;
+  padding: 0;
+}
+
+.widget.contactform fieldset label {
+width: 100%;
+float: left;
+font-family: "Lato", Geneva, Tahoma, sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+color: #6fb2db !important;
+letter-spacing: inherit;
+}
+
+.widget.contactform fieldset input {
+height: 40px;
+width: 100%;
+border: 2px solid fade(#6fb2db, 50%);
+background-color: #ffffff;
+font-family: "Lato", Geneva, Tahoma, sans-serif;
+font-size: 14px;
+color: #645d59;
+text-indent: 8px;
+margin-top: 6px;
+margin-bottom: 30px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+text-indent: 40px;
+    background-image: image('/images/envelope.png');
+  background-repeat: no-repeat;
+  background-position: 13px center;
+}
+
+.widget.contactform fieldset input:-webkit-autofill {
+  text-indent: 0;
+}
+
+::-webkit-input-placeholder {
+  background-image: image('/images/envelope.png');
+  background-repeat: no-repeat;
+  background-position: 8px 5px;
+  text-indent: 2000px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  background-image: image('/images/envelope.png');
+  background-repeat: no-repeat;
+  background-position: 8px 5px;
+  text-indent: 2000px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  background-image: image('/images/envelope.png');
+  background-repeat: no-repeat;
+  background-position: 8px 5px;
+  text-indent: 2000px;
+}
+
+:-ms-input-placeholder {  
+  background-image: image('/images/envelope.png');
+  background-repeat: no-repeat;
+  background-position: 8px 5px;
+  text-indent: 2000px;
+}
+
+.widget.contactform fieldset input:focus {
+    outline: none;
+    box-shadow: 0 0 6px #6fb2db;
+
+}
+
+.widget.contactform fieldset label {
+  width: 100%;
+  float: left;
+  font-family: "Lato", Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #686868;
+  letter-spacing: inherit;
+}
+.widget.contactform fieldset textarea {
+  height: 100px;
+  width: 100%;
+  border: 2px solid fade(#6fb2db, 50%);
+  background-color: #ffffff;
+  font-family: "Lato", Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  color: #645d59;
+  text-indent: 8px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  resize: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-image: image('/images/pencil.png');
+  background-repeat: no-repeat;
+  background-position: 13px 5px;
+  text-indent: 40px;
+}
+
+.widget.contactform fieldset textarea:focus {
+    outline: none;
+    box-shadow: 0 0 6px #6fb2db;
+}
+
+.widget.contactform fieldset button.btn {
+  padding: 8px 15px;
+  margin: 0;
+  border: none;
+  font-family: "Lato", Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #ee6b4f;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 3px 0px darken(#ee6b4f,20%);
+  -moz-box-shadow:    0px 3px 0px darken(#ee6b4f,20%); 
+  box-shadow:         0px 3px 0px darken(#ee6b4f,20%); 
+}
+
+.overlay {
+     display: none; 
+    .message-box {
+        background-color: #6cbd44;
+        -webkit-box-shadow: 0px 3px 0px darken(#6cbd44,20%);
+        -moz-box-shadow:    0px 3px 0px darken(#6cbd44,20%); 
+        box-shadow:         0px 3px 0px darken(#6cbd44,20%); 
+        width: 50%;
+        height: auto;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 20px;
+        .message-text {
+            font-size: 1em;
+            font-family: "Lato", Geneva, Tahoma, sans-serif;
+        }
+        :before {
+            content: "\2713";
+            background-image: none;
+            color: white;
+            top: 0;
+            font-size: 1.5em;
+            padding-right: 10px;
+        }
+    }
+}
+
+.style-for-success-message .overlay {
+     display: block;
+}
+
+//================================
+// Contact Form Submitting State
+//================================
+
+.widget.contactform {
+    .submitting {
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 0;
+        &:before, &:after {
+            content: "";
+            position: absolute;
+        }
+        &:before {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: fadeout(#6fb2db, 70%);
+            -webkit-animation: fadein .5s ease-in-out;
+            animation: fadein .5s ease-in-out;
+            border-radius: inherit;
+        }
+        &:after {
+            top: 50%;
+            left: 50%;
+            margin-left: -50px;
+            margin-top: -50px;
+            width: 100px;
+            height: 100px;
+            border: 3px solid transparent;
+            border-left-color: #ee6b4f;
+            background-color: transparent;
+            border-radius: 100%;
+            -webkit-animation: scaleout 1.0s infinite linear;
+            animation: scaleout 1.0s infinite linear;
+        }
+    }
+}
+
+// Thanks to http://tobiasahlin.com/spinkit/ for the loading animation
+
+@-webkit-keyframes scaleout {
+    0% { 
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    } 100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes scaleout {
+    0% { 
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    } 100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% { 
+        background-color: fadeout(white, 100%);
+    }
+    100% {
+        background-color: fadeout(white, 50%);
+    }
+}
+
+@keyframes fadein {
+    0% { 
+        background-color: fadeout(white, 100%);
+    }
+    100% {
+        background-color: fadeout(white, 50%);
+    }
+}
